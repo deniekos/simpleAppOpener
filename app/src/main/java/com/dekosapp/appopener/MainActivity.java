@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
         } else {
-            // The apps that correspond with package name inputted is not found in your device, so it opened
+            // The apps that correspond with package name inputted is not found in your device, so it opened app market instead
             intent = new Intent(Intent.ACTION_VIEW);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.setData(Uri.parse("market://details?id=" + packageName));
